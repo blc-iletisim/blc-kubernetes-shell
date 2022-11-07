@@ -3,7 +3,8 @@ sudo apt-get install -y apt-transport-https
 sudo apt install docker.io -y
 sudo systemctl start docker
 sudo systemctl enable docker
-curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
+wget https://packages.cloud.google.com/apt/doc/apt-key.gpg
+sudo apt-key add apt-key.gpg
 sudo echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" >/etc/apt/sources.list.d/kubernetes.list
 sudo apt-get update
 sudo apt install kubeadm=1.20.0-00 kubectl=1.20.0-00 kubelet=1.20.0-00 -y
