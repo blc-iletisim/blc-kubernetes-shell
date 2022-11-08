@@ -1,5 +1,5 @@
-sudo echo "ubuntu ALL=(ALL) NOPASSWD:ALL">/etc/sudoers.d/ubuntu
-sudo echo "ubuntu:x:1001:1001::/home/ubuntu:/bin/bash">/etc/passwd
+#sudo echo "ubuntu ALL=(ALL) NOPASSWD:ALL">/etc/sudoers.d/ubuntu
+#sudo echo "ubuntu:x:1001:1001::/home/ubuntu:/bin/bash">/etc/passwd
 sudo apt-get update
 sudo apt-get install -y apt-transport-https 
 sudo apt install docker.io -y
